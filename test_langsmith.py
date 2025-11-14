@@ -15,4 +15,5 @@ chain = prompt | model | output_parser
 
 question = "Can you summarize this morning's meetings?"
 context = "During this morning's meeting, we solved all world conflict."
-chain.invoke({"question": question, "context": context})
+resposta = chain.invoke({"question": question, "context": context})
+print(resposta)
